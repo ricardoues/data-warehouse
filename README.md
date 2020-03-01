@@ -19,6 +19,30 @@ The schema includes the following tables:
 
 * Fact Table
     * songplays - records in event data associated with song plays.
+* Dimension Tables
+    * users - users in the app 
+    * songs - songs in music database 
+    * artists - artists in music database 
+    * time - timestamps of records 
+
+
+The above star schema was designed in this way due to the massive amount of data in the Sparkify app. The advantanges of this schema are shown as follows:
+
+* Easily understood
+* Queries run faster than they do against an OLTP system. 
+* Enabling dimensional tables to be easily updated
+* Enabling new facts to be easily added i.e. regularly or selectively
+
+
+## References 
+
+http://gkmc.utah.edu/ebis_class/2003s/Oracle/DMB26/A73318/schemas.htm
+
+https://www.quora.com/What-does-a-star-schema-do-What-purpose-does-it-serve
+
+
+
+
 
 
 
