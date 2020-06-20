@@ -136,7 +136,7 @@ staging_songs_copy = ("""COPY staging_songs
                          FROM {}
                          format as json 'auto'
                          credentials  
-                         'aws_iam_role=arn:aws:iam::637150515554:role/myRedshiftRole'                                    region 'us-west-2'                                 
+                         'aws_iam_role=arn:aws:iam::<put_credentials>:role/<put_credentials>'                                    region 'us-west-2'                                 
                      """).format(config.get("S3", "SONG_DATA"))
 
 
