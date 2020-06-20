@@ -121,7 +121,7 @@ time_table_create = ("""CREATE TABLE time(
 staging_events_copy = ("""COPY staging_events 
                           FROM {}                          
                           credentials 
-                          'aws_iam_role=arn:aws:iam::637150515554:role/myRedshiftRole'
+                          'aws_iam_role=arn:aws:iam::<put_credentials>:role/<put_credentials>'
                           region 'us-west-2'  
                           JSON {}
                       """).format(config.get('S3', 'LOG_DATA'), 
